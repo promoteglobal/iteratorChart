@@ -1,8 +1,17 @@
 table, th, td {
-  border: solid 1px black;
+  border: solid 2px black;
 }
 
 th, td {
   max-width: 100%;
   white-space: nowrap;
+}
+
+
+table {
+  background-color: rgb(135, 252, 207);
+}
+
+.org {
+  background-color: orange;
 }

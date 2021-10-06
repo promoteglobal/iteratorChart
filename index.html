@@ -132,14 +132,14 @@
         <td>const numbers = [4, 9, 16, 25]; </td>
         <td> creates a new array with the results of calling a function for every array element.</td>
       </tr>
-      <tr>
+      <tr class="org">
         <td>ages.filter(checkAdult);</td>
         <td>[32, 33, 40] </td>
         <td>const ages = [32, 33, 16, 40]; ;</td>
         <td>creates an array filled with all array elements that pass a test (provided by a function).</td>
-        <td>function checkAdult(age) {
-               return age &#62= 18;
-              }
+        <td>function checkAdult(age) { <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return age &#62= 18; <br>
+            }
         </td>
       </tr>
     </tbody>
@@ -194,7 +194,7 @@
         <td>const fruits = ["Banana", "Orange", "Apple", "Mango"]; </td>
         <td>returns the last index (position) of a specified value.</td>
       </tr>
-      <tr>
+      <tr class="org">
         <td>numbers.reduce(myFunc);</td>
         <td>100</td>
         <td>const numbers = [175, 50, 25]; </td>
@@ -204,7 +204,7 @@
             } 
         </td>
       </tr>
-      <tr>
+      <tr class="org">
         <td>numbers.reduceRight(myFunc)</td>
         <td>-200</td>
         <td>const numbers = [175, 50, 25]; </td>
@@ -214,7 +214,7 @@
             }
         </td>
       </tr>
-      <tr>
+      <tr class="org">
         <td>ages.some(checkAdult)</td>
         <td>//true</td>
         <td>const ages = [3, 10, 18, 20]; </td>
@@ -224,7 +224,7 @@
             }
         </td>
       </tr>
-      <tr>
+      <tr class="org">
         <td>ages.every(checkAge) </td>
         <td>//false</td>
         <td>const ages = [32, 33, 16, 40]; </td>
@@ -234,7 +234,7 @@
             }
         </td>
       </tr>
-      <tr>
+      <tr class="org">
         <td>ages.find(checkAge)</td>
         <td>20</td>
         <td>const ages = [3, 10, 18, 20];  </td>
@@ -244,7 +244,7 @@
             }
         </td>
       </tr>
-      <tr>
+      <tr class="org">
         <td>ages.findIndex(checkAge)</td>
         <td>3</td>
         <td>const ages = [2, 10, 18, 20]; </td>
@@ -254,7 +254,7 @@
             }
         </td>
       </tr>
-      <tr>
+      <tr class="org">
         <td>fruits.entries();</td>
         <td>[0, "Banana"]
             [1, "Orange"]
@@ -263,25 +263,25 @@
         </td>
         <td>const fruits = ["Banana", "Orange", "Apple", "Mango"]; </td>
         <td>returns an Array Iterator object with key/value pairs.</td>
-        <td>for (let x of f) {
-            document.getElementById("demo").innerHTML += x;
+        <td>for (let x of f) { <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById("demo").innerHTML += x;<br>
             }
         </td>
       </tr>
-      <tr>
+      <tr class="org">
         <td>fruits.keys()</td>
         <td>0,1,2,3</td>
         <td>const fruits = ["Banana", "Orange", "Apple", "Mango"]; </td>
         <td>returns an Array Iterator object with the keys of an array. </td>
-        <td>for (let x of keys) {
-            text += x + "<br>";
+        <td>for (let x of keys) {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text += x + "&#60br&#62";<br>
             }
         </td>
       </tr>
     </tbody>
   </table>
 
-  <h2>Do what you want but forward count only for loop</h2>
+  <h2>Forward counting only for loop</h2>
 
   <table>
     <thead>
@@ -294,7 +294,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
+      <tr class="org">
         <td>fruits.forEach(myFunction);</td>
         <td>0: apple
             1: orange
@@ -302,15 +302,15 @@
         </td>
         <td>const fruits = ["apple", "orange", "cherry"];</td>
         <td> calls a function once for each element in an array, in order.</td>
-        <td>function myFunction(item, index) {
-            text += index + ": " + item + "<br>"; 
+        <td>function myFunction(item, index) { <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text += index + ": " + item + "&#60br&#62";  <br>
             }
         </td>
       </tr>
     </tbody>
   </table>
  
-  <h2>allows you to add new properties and methods to Arrays.</h2>
+  <h2>allows you to add new properties and methods to Arrays or find out constructor of array.</h2>
 
   <table>
     <thead>
@@ -330,16 +330,16 @@
         <td>returns the function that created the Array prototype.</td>
         <td></td>
       </tr>
-      <tr>
+      <tr class="org">
         <td>fruits.myUcase();</td>
         <td>BANANA,ORANGE,APPLE,MANGO</td>
         <td>const fruits = ["Banana", "Orange", "Apple", "Mango"];</td>
         <td>add new properties and methods to Arrays.</td>
-        <td>Array.prototype.myUcase = function() {
-              for (let i = 0; i &#60 this.length; i++) {
-                this[i] = this[i].toUpperCase();
-              }
-            };
+        <td>Array.prototype.myUcase = function() { <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (let i = 0; i &#60 this.length; i++) { <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this[i] = this[i].toUpperCase(); <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;} <br>
+          &nbsp;&nbsp;};
         </td>
       </tr>
     </tbody>

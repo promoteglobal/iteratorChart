@@ -220,7 +220,7 @@
         <td>const ages = [3, 10, 18, 20]; </td>
         <td>checks if any of the elements in an array pass a test (provided as a function). </td>
         <td>function checkAdult(age) {
-            return age >= 18;
+            return age &#62= 18;
             }
         </td>
       </tr>
@@ -230,7 +230,7 @@
         <td>const ages = [32, 33, 16, 40]; </td>
         <td> returns true if all elements in an array pass a test (provided as a function).</td>
         <td>function checkAge(age) {
-            return age > 18;
+            return age &#62 18;
             }
         </td>
       </tr>
@@ -240,7 +240,7 @@
         <td>const ages = [3, 10, 18, 20];  </td>
         <td>returns the value of the array element that passes a test (provided by a function). </td>
         <td>function checkAge(age) {
-            return age > 18;
+            return age &#62 18;
             }
         </td>
       </tr>
@@ -250,12 +250,99 @@
         <td>const ages = [2, 10, 18, 20]; </td>
         <td>returns the index of the first array element that passes a test (provided by a function). </td>
         <td>function checkAge(age) {
-            return age > 18;
+            return age &#62 18;
+            }
+        </td>
+      </tr>
+      <tr>
+        <td>fruits.entries();</td>
+        <td>[0, "Banana"]
+            [1, "Orange"]
+            [2, "Apple"]
+            [3, "Mango"]
+        </td>
+        <td>const fruits = ["Banana", "Orange", "Apple", "Mango"]; </td>
+        <td>returns an Array Iterator object with key/value pairs.</td>
+        <td>for (let x of f) {
+            document.getElementById("demo").innerHTML += x;
+            }
+        </td>
+      </tr>
+      <tr>
+        <td>fruits.keys()</td>
+        <td>0,1,2,3</td>
+        <td>const fruits = ["Banana", "Orange", "Apple", "Mango"]; </td>
+        <td>returns an Array Iterator object with the keys of an array. </td>
+        <td>for (let x of keys) {
+            text += x + "<br>";
             }
         </td>
       </tr>
     </tbody>
   </table>
-  
+
+  <h2>Do what you want but forward count only for loop</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Example</th>
+        <th>returns</th>
+        <th>Original Array</th>
+        <th>Purpose</th>
+        <th>function</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>fruits.forEach(myFunction);</td>
+        <td>0: apple
+            1: orange
+            2: cherry
+        </td>
+        <td>const fruits = ["apple", "orange", "cherry"];</td>
+        <td> calls a function once for each element in an array, in order.</td>
+        <td>function myFunction(item, index) {
+            text += index + ": " + item + "<br>"; 
+            }
+        </td>
+      </tr>
+    </tbody>
+  </table>
+ 
+  <h2>allows you to add new properties and methods to Arrays.</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Example</th>
+        <th>returns</th>
+        <th>Original Array</th>
+        <th>Purpose</th>
+        <th>function</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>fruits.constructor;</td>
+        <td>function Array() { [native code] }</td>
+        <td>const fruits = ["Banana", "Orange", "Apple", "Mango"];</td>
+        <td>returns the function that created the Array prototype.</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>fruits.myUcase();</td>
+        <td>BANANA,ORANGE,APPLE,MANGO</td>
+        <td>const fruits = ["Banana", "Orange", "Apple", "Mango"];</td>
+        <td>add new properties and methods to Arrays.</td>
+        <td>Array.prototype.myUcase = function() {
+              for (let i = 0; i &#60 this.length; i++) {
+                this[i] = this[i].toUpperCase();
+              }
+            };
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </body>
 </html>

@@ -9,9 +9,13 @@ th, td {
 
 
 table {
-  background-color: rgb(135, 252, 207);
+  background-color: rgb(168, 255, 222);
 }
 
-.org {
-  background-color: orange;
+.funcNeeded {
+  background-color: rgb(252, 221, 164);
+}
+
+.headerColor {
+  background-color: rgb(255, 202, 202);
 }

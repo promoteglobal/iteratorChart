@@ -14,7 +14,7 @@
 
   <table>
     <thead>
-      <tr>
+      <tr class="headerColor">
         <th colspan="4">(Original Array) const fruits = ["Banana", "Orange", "Apple", "Mango"]</th>
       </tr>
       <tr>
@@ -86,7 +86,7 @@
 
   <table>
     <thead>
-      <tr>
+      <tr class="headerColor">
         <th>Example</th>
         <th>New Array(returned)</th>
         <th>Original Array</th>
@@ -132,7 +132,7 @@
         <td>const numbers = [4, 9, 16, 25]; </td>
         <td> creates a new array with the results of calling a function for every array element.</td>
       </tr>
-      <tr class="org">
+      <tr class="funcNeeded">
         <td>ages.filter(checkAdult);</td>
         <td>[32, 33, 40] </td>
         <td>const ages = [32, 33, 16, 40]; ;</td>
@@ -149,7 +149,7 @@
 
   <table>
     <thead>
-      <tr>
+      <tr class="headerColor">
         <th>Example</th>
         <th>returns</th>
         <th>orignal array</th>
@@ -194,7 +194,7 @@
         <td>const fruits = ["Banana", "Orange", "Apple", "Mango"]; </td>
         <td>returns the last index (position) of a specified value.</td>
       </tr>
-      <tr class="org">
+      <tr class="funcNeeded">
         <td>numbers.reduce(myFunc);</td>
         <td>100</td>
         <td>const numbers = [175, 50, 25]; </td>
@@ -204,7 +204,7 @@
             } 
         </td>
       </tr>
-      <tr class="org">
+      <tr class="funcNeeded">
         <td>numbers.reduceRight(myFunc)</td>
         <td>-200</td>
         <td>const numbers = [175, 50, 25]; </td>
@@ -214,7 +214,7 @@
             }
         </td>
       </tr>
-      <tr class="org">
+      <tr class="funcNeeded">
         <td>ages.some(checkAdult)</td>
         <td>//true</td>
         <td>const ages = [3, 10, 18, 20]; </td>
@@ -224,7 +224,7 @@
             }
         </td>
       </tr>
-      <tr class="org">
+      <tr class="funcNeeded">
         <td>ages.every(checkAge) </td>
         <td>//false</td>
         <td>const ages = [32, 33, 16, 40]; </td>
@@ -234,7 +234,7 @@
             }
         </td>
       </tr>
-      <tr class="org">
+      <tr class="funcNeeded">
         <td>ages.find(checkAge)</td>
         <td>20</td>
         <td>const ages = [3, 10, 18, 20];  </td>
@@ -244,7 +244,7 @@
             }
         </td>
       </tr>
-      <tr class="org">
+      <tr class="funcNeeded">
         <td>ages.findIndex(checkAge)</td>
         <td>3</td>
         <td>const ages = [2, 10, 18, 20]; </td>
@@ -254,7 +254,7 @@
             }
         </td>
       </tr>
-      <tr class="org">
+      <tr class="funcNeeded">
         <td>fruits.entries();</td>
         <td>[0, "Banana"]
             [1, "Orange"]
@@ -268,7 +268,7 @@
             }
         </td>
       </tr>
-      <tr class="org">
+      <tr class="funcNeeded">
         <td>fruits.keys()</td>
         <td>0,1,2,3</td>
         <td>const fruits = ["Banana", "Orange", "Apple", "Mango"]; </td>
@@ -285,7 +285,7 @@
 
   <table>
     <thead>
-      <tr>
+      <tr class="headerColor">
         <th>Example</th>
         <th>returns</th>
         <th>Original Array</th>
@@ -294,7 +294,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr class="org">
+      <tr class="funcNeeded">
         <td>fruits.forEach(myFunction);</td>
         <td>0: apple
             1: orange
@@ -314,7 +314,7 @@
 
   <table>
     <thead>
-      <tr>
+      <tr class="headerColor">
         <th>Example</th>
         <th>returns</th>
         <th>Original Array</th>
@@ -330,7 +330,7 @@
         <td>returns the function that created the Array prototype.</td>
         <td></td>
       </tr>
-      <tr class="org">
+      <tr class="funcNeeded">
         <td>fruits.myUcase();</td>
         <td>BANANA,ORANGE,APPLE,MANGO</td>
         <td>const fruits = ["Banana", "Orange", "Apple", "Mango"];</td>
